@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" /><!-- Link to external CSS file -->
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link to Google Fonts - Dancing Script -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preconnect to Google Fonts again -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link to Google Fonts - Dancing Script and Sedan SC -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sedan+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title of the webpage -->
+    <title>Quote Hub</title>
+  </head>
+  <body>
+    <!-- Category selection dropdown -->
+    <div class="category">
+      <label>Select a category</label>
+      <select name="categories" id="categories">
+        <!-- Empty option for the dropdown -->
+        <option value=""></option>
+        <!-- Various category options for quotes -->
+        <option value="age">Age</option>
+        <option value="alone">Alone</option>
+        <option value="amazing">Amazing</option>
+        <option value="anger">Anger</option>
+        <option value="architecture">Architecture</option>
+        <option value="art">Art</option>
+        <option value="attitude">Attitude</option>
+        <option value="beauty">Beauty</option>
+        <option value="best">Best</option>
+        <option value="birthday">Birthday</option>
+        <option value="business">Business</option>
+        <option value="car">Car</option>
+        <option value="change">Change</option>
+        <option value="communication">Communication</option>
+        <option value="computers">Computers</option>
+        <option value="cool">Cool</option>
+        <option value="courage">Courage</option>
+        <option value="dad">Dad</option>
+        <option value="dating">Dating</option>
+        <option value="death">Death</option>
+        <option value="design">Design</option>
+        <option value="dreams">Dreams</option>
+        <option value="education">Education</option>
+        <option value="environmental">Environmental</option>
+        <option value="equality">Equality</option>
+        <option value="experience">Experience</option>
+        <option value="failure">Failure</option>
+        <option value="faith">Faith</option>
+        <option value="family">Family</option>
+        <option value="famous">Famous</option>
+        <option value="fear">Fear</option>
+        <option value="fitness">Fitness</option>
+        <option value="food">Food</option>
+        <option value="forgiveness">Forgiveness</option>
+        <option value="freedom">Freedom</option>
+        <option value="friendship">Friendship</option>
+        <option value="funny">Funny</option>
+        <option value="future">Future</option>
+        <option value="god">God</option>
+        <option value="good">Good</option>
+        <option value="government">Government</option>
+        <option value="graduation">Graduation</option>
+        <option value="great">Great</option>
+        <option value="happiness">Happiness</option>
+        <option value="health">Health</option>
+        <option value="history">History</option>
+        <option value="home">Home</option>
+        <option value="hope">Hope</option>
+        <option value="humor">Humor</option>
+        <option value="imagination">Imagination</option>
+        <option value="inspirational">Inspirational</option>
+        <option value="intelligence">Intelligence</option>
+        <option value="jealousy">Jealousy</option>
+        <option value="knowledge">Knowledge</option>
+        <option value="leadership">Leadership</option>
+        <option value="learning">Learning</option>
+        <option value="legal">Legal</option>
+        <option value="life">Life</option>
+        <option value="love">Love</option>
+        <option value="marriage">Marriage</option>
+        <option value="medical">Medical</option>
+        <option value="men">Men</option>
+        <option value="mom">Mom</option>
+        <option value="money">Money</option>
+        <option value="morning">Morning</option>
+        <option value="movies">Movies</option>
+        <option value="success">Success</option>
+      </select>
+    </div>
+
+    <!-- Main container for the quote display -->
+    <div class="container">
+      <!-- Header section with title -->
+      <div class="header">
+        <h1>Quote of the Day</h1>
+      </div>
+      <!-- Section for the quote text -->
+      <div class="quote" id="quote">
+        The secret to happiness is to face the fact that the world is horrible.
+      </div>
+      <!-- Section for the writer's name -->
+      <div class="writer" id="writer">Bertrand Russell</div>
+      <!-- Button to get a new quote -->
+      <div class="submit">
+        <button class="btn" id="newQuote">New Quote</button>
+      </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="./index.js"></script>
+  </body>
+</html>

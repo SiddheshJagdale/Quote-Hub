@@ -1,0 +1,147 @@
+
+/* Reset padding and margin for all elements, and set box-sizing to border-box */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body to take the full viewport height and width, center content */
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef7ff; /* Light blue background color */
+}
+
+/* Container styling */
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Space out children evenly */
+    align-items: center; /* Center children horizontally */
+    background-color: #4d869c; /* Dark blue background color */
+    height: 350px; /* Fixed height */
+    width: 500px; /* Fixed width */
+    border-radius: 30px; /* Rounded corners */
+    padding: 40px 25px; /* Padding inside the container */
+    box-shadow: 1px 4px 8px #000; /* Box shadow for depth */
+    text-align: center; /* Center text inside the container */
+}
+
+/* Styling for quote text */
+.quote {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of content */
+    font-size: 18px; /* Font size */
+    font-family: "Sedan SC", serif; /* Serif font */
+    color: #eef7ff; /* Light blue text color */
+    text-align: center; /* Center text alignment */
+}
+
+/* Styling for the writer's name */
+.writer {
+    font-size: 18px; /* Font size */
+    font-family: "Dancing Script", cursive; /* Cursive font */
+    color: #fff; /* White text color */
+}
+
+/* Styling for headings */
+h1 {
+    color: #ffff; /* White text color */
+    font-family: "Sedan SC", serif; /* Serif font */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 20px; /* Padding inside the button */
+    float: right; /* Float to the right */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    box-shadow: 1px 3px 8px #000; /* Box shadow on hover */
+}
+
+/* Positioning for category selector */
+.category {
+    position: absolute; /* Absolute positioning */
+    right: 110px; /* 110px from the right */
+    top: 130px; /* 130px from the top */
+}
+
+/* Styling for labels */
+label {
+    font-family: "Sedan SC", serif; /* Serif font */
+    font-size: 20px; /* Font size */
+    margin-right: 10px; /* Margin to the right */
+}
+
+/* Styling for select dropdown */
+select {
+    font-size: 16px; /* Font size */
+    padding: 10px; /* Padding inside the dropdown */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background color */
+    color: #333; /* Dark gray text color */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+/* Focus state for select dropdown */
+select:focus {
+    box-shadow: 0 0 5px rgba(30, 31, 30, 0.5); /* Box shadow on focus */
+    outline: none; /* No outline */
+}
+
+/* Responsive design for screen widths 768px or less */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .container {
+        width: 90%; /* 90% of the viewport width */
+        padding: 20px; /* Reduced padding */
+    }
+    .category {
+        position: static; /* Default positioning */
+        margin-bottom: 20px; /* Space below category */
+    }
+    label {
+        display: block; /* Block display */
+        margin-bottom: 5px; /* Space below label */
+        text-align: center; /* Center text alignment */
+    }
+    select {
+        width: 100%; /* Full width */
+    }
+    button {
+        width: 100%; /* Full width */
+        padding: 15px; /* Increased padding */
+    }
+    .quote {
+        font-size: 16px; /* Smaller font size */
+    }
+    .writer {
+        font-size: 16px; /* Smaller font size */
+    }
+}
+
+/* Further adjustments for screen widths 480px or less */
+@media (max-width: 480px) {
+    .quote {
+        font-size: 14px; /* Even smaller font size */
+    }
+    .writer {
+        font-size: 14px; /* Even smaller font size */
+    }
+    h1 {
+        font-size: 24px; /* Smaller font size for heading */
+    }
+}
